@@ -19,7 +19,7 @@ func sum(_ args: Int...) -> Int {
 }
 
 sum(1, 2, 3, 4, 5)
-//sum([1, 2, 3, 4, 5])
+//sum([1, 2, 3, 4, 5]) compile error
 
 //: • parâmetros de entrada/saída
 

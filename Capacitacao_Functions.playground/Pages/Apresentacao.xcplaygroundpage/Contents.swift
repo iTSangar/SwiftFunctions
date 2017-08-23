@@ -1,3 +1,4 @@
+//: 🎯 *Para visualizar o arquivo renderizado: Editor > Show Rendered Markup*
 /*:
  ****
  
@@ -12,7 +13,7 @@
  - **[Conceitos](Conceitos)**
  - **[Closures (lambda ou funções anônimas)](Closures)**
  - **[Extras](Extras)**
- - **[Desafios](Desafios)**
+ - **[Desafio](Desafios)**
  
  */
 
@@ -24,5 +25,5 @@ var str = "Hello, mãe tô no Dojo"
 
 /*:
  ****
- [Next](@next)
+ [References](References) | [Next](@next)
  */

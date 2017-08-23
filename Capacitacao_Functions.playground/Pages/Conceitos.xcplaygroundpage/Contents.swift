@@ -21,6 +21,8 @@ func formatDate(date: Date, format: String = "dd/MM/YY") -> String { return "" }
 
 func square(base b: Double, height h: Double) -> Double { return 0.0 }
 
+func getByFilter(_ filter: String) -> Double { return 0.0 }
+
 
 /*:
  ## Retorno da Função
@@ -29,7 +31,8 @@ func square(base b: Double, height h: Double) -> Double { return 0.0 }
  Mas e a função `printHelloWorld()` aqui de cima??
  */
 
-let value = printHelloWorld()
+let value: () = printHelloWorld()
+
 
 /*:
  ## Tipo da Função
@@ -77,7 +80,9 @@ func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
     print("Result: \(mathFunction(a, b))")
 }
 
-printMathResult(addTwoInts, 3, 5)
+let param: ((Int, Int) -> Int, Int, Int) -> Void
+
+printMathResult(multiplyTwoInts, 3, 5)
 
 /*:
  ****

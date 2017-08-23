@@ -6,5 +6,6 @@
         <page name='Closures'/>
         <page name='Extras'/>
         <page name='Desafios'/>
+        <page name='References'/>
     </pages>
 </playground>
