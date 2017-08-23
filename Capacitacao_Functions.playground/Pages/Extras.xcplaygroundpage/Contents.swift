@@ -6,7 +6,7 @@
 
 import UIKit
 
-//: • parâmetros variáveis:
+//: • parâmetros múltiplos:
 
 func sum(_ args: Int...) -> Int {
   var total: Int = 0
@@ -34,11 +34,6 @@ var anotherInt = 107
 swapTwoInts(&firstInt, &anotherInt)
 
 print("firstInt is now \(firstInt), and anotherInt is now \(anotherInt)")
-
-
-//: • escaping:
-
-//: • funções aninhadas:
 
 /*:
  ****

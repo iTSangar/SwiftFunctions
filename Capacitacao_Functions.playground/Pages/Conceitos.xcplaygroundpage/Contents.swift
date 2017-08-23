@@ -37,10 +37,47 @@ let value = printHelloWorld()
  
  Existe uma maneira de determinarmos o tipo da função:
  
+ `(parameter type) -> return type`
+ 
  */
 
+let function1: () -> ()
+let function2: (String) -> ()
+let function3: (String, Int) -> Void
+let function4: (Date, String) -> String
+let function5: (Double, Double) -> Double
 
+/*:
+ A partir disso podemos utilizar funções de várias maneiras:
+ - armazenar um função em uma variável
+ - passar uma função como parâmetro para outra função
+ - retornar uma função no retorno de uma função
+ 
+ 
+ **Por isso as funções em Swift são conhecidas como funções de primeira classe ou First-class Citizen.**
+ */
 
+func addTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a + b
+}
+
+func multiplyTwoInts(_ a: Int, _ b: Int) -> Int {
+    return a * b
+}
+
+// Função como variável:
+var mathFunction: (Int, Int) -> Int = addTwoInts
+print("Result: \(mathFunction(2, 3))")
+
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2, 3))")
+
+// Função como parâmetro:
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+    print("Result: \(mathFunction(a, b))")
+}
+
+printMathResult(addTwoInts, 3, 5)
 
 /*:
  ****

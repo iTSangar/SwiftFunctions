@@ -6,7 +6,9 @@
 
 import UIKit
 
-var str = "Hello, playground"
+
+//: [Desafio Closure](https://github.com/iTSangar/SwiftFunctions/tree/master/challenge)
+
 
 /*:
  ****
